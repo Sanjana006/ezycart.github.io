@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; /* Updated to vertical alignment */
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .logo {
+      width: 400px; /* Adjust the size of your logo */
+      height: auto; /* Maintain aspect ratio */
+      animation: zoomIn 4s ease-in-out forwards; /* Adjust the animation duration and timing function */
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0); /* Initial scale */
+      }
+      to {
+        transform: scale(1); /* Final scale */
+      }
+    }
+
+    .start-button {
+      padding: 20px 30px;
+      font-size: 40px;
+      background-color: #3498db;
+      color: #fff;
+      text-decoration: none;
+      border: none;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+    /* CSS style for changing text color */
+    .colored-text {
+      color: #ff5733; /* Set the desired color using a color code, name, or RGB value */
+    }
+    /* CSS style for increasing text size */
+    .larger-text {
+      font-size: 35px; /* Set the desired font size */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Logo with zoom-in animation -->
+  <img src="E:\EzyCart Startup\EzyCart Logo files\EzyCart Logo.png" alt="Logo" class="logo">
+
+  <!-- Start button -->
+  <button class="start-button" onclick="startFunction()">Start Shopping</button>
+
+  <script>
+    // JavaScript function to handle the "Start" button click
+    function startFunction() {
+      alert('Let the journey begin!'); // You can replace this with your desired functionality
+    }
+  </script>
+
+</body>
+</html>
